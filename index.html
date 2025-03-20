@@ -3,27 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Consultoria Financeira</title>
+    <title>Consultoria Financeira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4A90E2, #8E44AD);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            background: #fff;
+            color: #4A90E2;
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #ddd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo à minha consultoria financeira!</h1>
-    <p>Deixe seus dados abaixo para saber mais.</p>
-
-    <form action="https://formsubmit.co/seu-email" method="POST">
-        <label>Nome:</label>
-        <input type="text" name="nome" required><br><br>
-
-        <label>Email:</label>
-        <input type="email" name="email" required><br><br>
-
-        <label>Qual seu maior interesse?</label>
-        <select name="interesse">
-            <option>Investimentos</option>
-            <option>Planejamento Financeiro</option>
-            <option>Consultoria Completa</option>
-        </select><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="container">
+        <h1>Consultoria Financeira Personalizada</h1>
+        <p>
+            Se você deseja organizar suas finanças, investir com mais segurança e garantir um futuro tranquilo, 
+            minha consultoria financeira é para você! Aqui, analisamos seu perfil, suas necessidades e criamos 
+            um planejamento personalizado para você atingir seus objetivos.
+        </p>
+        <p>
+            Trabalhamos com estratégias inteligentes para otimizar seus investimentos e trazer mais segurança 
+            para o seu patrimônio. Não importa se você é iniciante ou já tem experiência, temos a solução ideal para você!
+        </p>
+        <a href="https://forms.seuformulario.com" class="button">Quero Saber Mais</a>
+    </div>
 </body>
 </html>
