@@ -3,96 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultoria Financeira - Seu Portfólio</title>
+    <title>Consultoria Financeira | Seu Portfólio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #0a2342, #4b0082);
-            color: white;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background: linear-gradient(135deg, #0a2540, #532a7a);
+            color: #ffffff;
         }
         .container {
             width: 80%;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
         }
-        h1 {
-            font-size: 2em;
+        header {
+            text-align: center;
+            padding: 50px 20px;
         }
         .section {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            padding: 40px;
             margin: 20px 0;
             border-radius: 10px;
         }
+        .section h2 {
+            color: #ffcc00;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .grid-item {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
         img {
             width: 100%;
-            max-width: 600px;
             border-radius: 10px;
         }
         .cta {
-            display: inline-block;
-            background: #ffd700;
-            color: #0a2342;
-            padding: 10px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta a {
+            background: #ffcc00;
+            color: #0a2540;
+            padding: 15px 30px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
-            margin-top: 20px;
+            display: inline-block;
+        }
+        .cta a:hover {
+            background: #ff9900;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Consultoria Financeira Personalizada</h1>
+        <p>Organize suas finanças, invista com segurança e aumente seu patrimônio com uma estratégia eficiente.</p>
+    </header>
+    
     <div class="container">
-        <h1>Consultoria Financeira da Seu Portfólio</h1>
-        <p>A solução ideal para organizar suas finanças, investir com segurança e aumentar seu patrimônio!</p>
-        
         <div class="section">
-            <h2>Diagnóstico Financeiro Preliminar</h2>
-            <p>Analisamos sua renda, despesas e investimentos para entender sua situação financeira atual.</p>
-            <img src="https://source.unsplash.com/600x400/?finance,analysis" alt="Diagnóstico Financeiro">
+            <h2>Como Funciona?</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>📊 Diagnóstico Financeiro</h3>
+                    <p>Analisamos sua renda, despesas e investimentos para mapear sua situação financeira.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>📈 Planejamento Patrimonial</h3>
+                    <p>Estruturamos seus ativos e passivos para um crescimento seguro e sustentável.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>💰 Planejamento Orçamentário</h3>
+                    <p>Monitoramos receitas e despesas para que você alcance seus objetivos financeiros.</p>
+                </div>
+            </div>
         </div>
-        
+
         <div class="section">
-            <h2>Planejamento Patrimonial</h2>
-            <p>Estruturamos sua gestão de ativos e passivos para crescimento sustentável.</p>
-            <img src="https://source.unsplash.com/600x400/?investment,wealth" alt="Planejamento Patrimonial">
+            <h2>Estratégias de Investimentos</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>🧐 Asset Allocation</h3>
+                    <p>Definimos a melhor distribuição dos seus investimentos para equilibrar risco e retorno.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>🔄 Rebalanceamento</h3>
+                    <p>Ajustamos sua carteira de investimentos conforme as mudanças do mercado.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>📌 Seleção de Ações</h3>
+                    <p>Identificamos as melhores oportunidades de ações para maximizar seus rendimentos.</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="section">
-            <h2>Planejamento Orçamentário</h2>
-            <p>Monitoramos receitas e despesas, estabelecendo metas para otimizar sua economia.</p>
-            <img src="https://source.unsplash.com/600x400/?budget,finance" alt="Planejamento Orçamentário">
-        </div>
-        
-        <div class="section">
-            <h2>Asset Allocation dos Investimentos</h2>
-            <p>Definimos a melhor distribuição de investimentos conforme seu perfil de risco.</p>
-            <img src="https://source.unsplash.com/600x400/?stockmarket,investment" alt="Asset Allocation">
-        </div>
-        
-        <div class="section">
-            <h2>Rebalanceamento da Carteira</h2>
-            <p>Ajustamos periodicamente sua carteira para manter sua estratégia otimizada.</p>
-            <img src="https://source.unsplash.com/600x400/?stocks,portfolio" alt="Rebalanceamento da Carteira">
-        </div>
-        
-        <div class="section">
-            <h2>Seleção de Ações</h2>
-            <p>Identificamos oportunidades de ações alinhadas ao seu perfil e objetivos.</p>
-            <img src="https://source.unsplash.com/600x400/?stocks,chart" alt="Seleção de Ações">
-        </div>
-        
-        <a href="#formulario" class="cta">Cadastre-se para mais informações</a>
-        
-        <div class="section" id="formulario">
-            <h2>Cadastre-se</h2>
-            <p>Preencha o formulário abaixo para receber mais informações sobre a consultoria.</p>
-            <iframe src="https://form.jotform.com/" width="100%" height="500px" frameborder="0"></iframe>
+    
+        <div class="cta">
+            <h2>Quer uma consultoria personalizada?</h2>
+            <p>Cadastre-se abaixo para receber mais informações.</p>
+            <a href="#">Cadastrar Interesse</a>
         </div>
     </div>
 </body>
 </html>
-
