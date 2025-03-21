@@ -162,25 +162,56 @@
         <a href="#formulario" class="button">Quero Investir com Estratégia</a>
     </section>
 
-    <!-- Por que escolher a Seu Portfólio? -->
-    <section class="section" id="porque-escolher">
-        <h2>Por que Escolher a Seu Portfólio?</h2>
-        <p>Oferecemos uma abordagem integrada, utilizando ferramentas avançadas para fornecer um serviço completo e personalizado, visando o seu sucesso financeiro. Com nossa equipe especializada, você terá total confiança nas soluções que oferecemos.</p>
-        <a href="#formulario" class="button">Quero Agendar</a>
-    </section>
+    <section id="porque-escolher" class="container mx-auto py-16 px-6 text-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Por que escolher a Seu Portfólio?</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+            <img src="images/plataforma-inteligente.png" alt="Plataforma Inteligente" class="mx-auto mb-4 w-16">
+            <h3 class="text-xl font-semibold mb-2">Plataforma Inteligente</h3>
+            <p>Integração com a Meu Vista para acompanhar investimentos em tempo real, permitindo decisões estratégicas e otimizadas.</p>
+        </div>
+        
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+            <img src="images/gestao-otimizada.png" alt="Gestão Otimizada" class="mx-auto mb-4 w-16">
+            <h3 class="text-xl font-semibold mb-2">Gestão Otimizada</h3>
+            <p>Planejamento financeiro detalhado, com simulações e relatórios personalizados para seu perfil e objetivos.</p>
+        </div>
+        
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+            <img src="images/seguranca-garantida.png" alt="Segurança Garantida" class="mx-auto mb-4 w-16">
+            <h3 class="text-xl font-semibold mb-2">Segurança Garantida</h3>
+            <p>Plataforma criptografada e validada pelo mercado financeiro, garantindo total proteção das suas informações.</p>
+        </div>
+    </div>
+    
+    <div class="text-center mt-10">
+        <a href="#formulario" class="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-3 px-6 rounded-lg text-lg font-semibold shadow-lg hover:opacity-80 transition-all">
+            Quero minha consultoria agora
+        </a>
+    </div>
+</section>
 
-    <!-- Formulário no final da página -->
-    <section class="form-section" id="formulario">
-        <h2>Agende Sua Consultoria</h2>
-        <p>Preencha os dados abaixo para agendar sua consultoria personalizada.</p>
-        <form action="enviar_dados.php" method="post">
-            <input type="text" name="nome" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu E-mail" required>
-            <input type="tel" name="telefone" placeholder="Seu Telefone" required>
-            <textarea name="mensagem" placeholder="Mensagem (opcional)"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-</body>
-</html>
+<!-- Formulário -->
+<section id="formulario" class="container mx-auto py-16 px-6 text-white">
+    <h2 class="text-3xl font-bold text-center mb-6">Preencha seus dados e comece agora</h2>
+    <form action="#" method="POST" class="max-w-lg mx-auto bg-gray-900 p-6 rounded-lg shadow-lg">
+        <label class="block mb-4">
+            <span class="text-gray-300">Nome:</span>
+            <input type="text" name="nome" required class="w-full p-3 mt-2 rounded bg-gray-800 border border-gray-600 focus:border-blue-500">
+        </label>
+        <label class="block mb-4">
+            <span class="text-gray-300">E-mail:</span>
+            <input type="email" name="email" required class="w-full p-3 mt-2 rounded bg-gray-800 border border-gray-600 focus:border-blue-500">
+        </label>
+        <label class="block mb-4">
+            <span class="text-gray-300">Telefone:</span>
+            <input type="tel" name="telefone" required class="w-full p-3 mt-2 rounded bg-gray-800 border border-gray-600 focus:border-blue-500">
+        </label>
+        <div class="text-center">
+            <button type="submit" class="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-3 px-6 rounded-lg text-lg font-semibold shadow-lg hover:opacity-80 transition-all">
+                Enviar e iniciar consultoria
+            </button>
+        </div>
+    </form>
+</section>
