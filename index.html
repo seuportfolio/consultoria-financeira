@@ -162,56 +162,51 @@
         <a href="#formulario" class="button">Quero Investir com Estratégia</a>
     </section>
 
-    <section id="porque-escolher" class="container mx-auto py-16 px-6 text-white">
-    <h2 class="text-3xl font-bold text-center mb-10">Por que escolher a Seu Portfólio?</h2>
-    
-    <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-            <img src="images/plataforma-inteligente.png" alt="Plataforma Inteligente" class="mx-auto mb-4 w-16">
-            <h3 class="text-xl font-semibold mb-2">Plataforma Inteligente</h3>
-            <p>Integração com a Meu Vista para acompanhar investimentos em tempo real, permitindo decisões estratégicas e otimizadas.</p>
+    <!-- Por que escolher a Seu Portfólio? -->
+    <section class="section" id="porque-escolher">
+        <h2>Por que escolher a Seu Portfólio?</h2>
+        <p>Com expertise e estratégia, nossa consultoria proporciona soluções personalizadas para otimizar seus investimentos e garantir um futuro financeiro sólido.</p>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Plataforma Meu Vista</h3>
+                <p>A Meu Vista oferece tecnologia avançada para monitoramento de investimentos, proporcionando maior transparência, controle e eficiência na gestão da sua carteira.</p>
+            </div>
+            <div class="service-item">
+                <h3>Atendimento Personalizado</h3>
+                <p>Cada cliente recebe um planejamento financeiro exclusivo, alinhado às suas necessidades e objetivos de curto, médio e longo prazo.</p>
+            </div>
+            <div class="service-item">
+                <h3>Metodologia Estratégica</h3>
+                <p>Utilizamos as melhores práticas do mercado para potencializar seus rendimentos, sempre focando na diversificação e na mitigação de riscos.</p>
+            </div>
+            <div class="service-item">
+                <h3>Gestão de Risco Inteligente</h3>
+                <p>Implementamos estratégias de proteção para minimizar impactos financeiros negativos e maximizar retornos ao longo do tempo.</p>
+            </div>
         </div>
-        
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-            <img src="images/gestao-otimizada.png" alt="Gestão Otimizada" class="mx-auto mb-4 w-16">
-            <h3 class="text-xl font-semibold mb-2">Gestão Otimizada</h3>
-            <p>Planejamento financeiro detalhado, com simulações e relatórios personalizados para seu perfil e objetivos.</p>
-        </div>
-        
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-            <img src="images/seguranca-garantida.png" alt="Segurança Garantida" class="mx-auto mb-4 w-16">
-            <h3 class="text-xl font-semibold mb-2">Segurança Garantida</h3>
-            <p>Plataforma criptografada e validada pelo mercado financeiro, garantindo total proteção das suas informações.</p>
-        </div>
-    </div>
-    
-    <div class="text-center mt-10">
-        <a href="#formulario" class="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-3 px-6 rounded-lg text-lg font-semibold shadow-lg hover:opacity-80 transition-all">
-            Quero minha consultoria agora
-        </a>
-    </div>
-</section>
+        <a href="#formulario" class="button">Quero Crescer com Segurança</a>
+    </section>
 
-<!-- Formulário -->
-<section id="formulario" class="container mx-auto py-16 px-6 text-white">
-    <h2 class="text-3xl font-bold text-center mb-6">Preencha seus dados e comece agora</h2>
-    <form action="#" method="POST" class="max-w-lg mx-auto bg-gray-900 p-6 rounded-lg shadow-lg">
-        <label class="block mb-4">
-            <span class="text-gray-300">Nome:</span>
-            <input type="text" name="nome" required class="w-full p-3 mt-2 rounded bg-gray-800 border border-gray-600 focus:border-blue-500">
-        </label>
-        <label class="block mb-4">
-            <span class="text-gray-300">E-mail:</span>
-            <input type="email" name="email" required class="w-full p-3 mt-2 rounded bg-gray-800 border border-gray-600 focus:border-blue-500">
-        </label>
-        <label class="block mb-4">
-            <span class="text-gray-300">Telefone:</span>
-            <input type="tel" name="telefone" required class="w-full p-3 mt-2 rounded bg-gray-800 border border-gray-600 focus:border-blue-500">
-        </label>
-        <div class="text-center">
-            <button type="submit" class="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-3 px-6 rounded-lg text-lg font-semibold shadow-lg hover:opacity-80 transition-all">
-                Enviar e iniciar consultoria
-            </button>
-        </div>
-    </form>
-</section>
+    <!-- Formulário de Contato -->
+    <section class="form-section" id="formulario">
+        <h2>Fale Conosco</h2>
+        <p>Preencha o formulário abaixo e um especialista entrará em contato para entender suas necessidades financeiras.</p>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Quero uma Análise Personalizada</button>
+        </form>
+    </section>
+
+</body>
+</html>
