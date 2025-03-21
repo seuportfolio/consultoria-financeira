@@ -181,32 +181,43 @@
             </div>
             <div class="service-item">
                 <h3>Gestão de Risco Inteligente</h3>
-                <p>Implementamos estratégias de proteção para minimizar impactos financeiros negativos e maximizar retornos ao longo do tempo.</p>
+                <p>Implementação de estratégias de proteção para minimizar impactos financeiros negativos e maximizar retornos ao longo do tempo.</p>
             </div>
         </div>
-        <a href="#formulario" class="button">Quero Crescer com Segurança</a>
+        <a href="#formulario" class="button">Desbloqueie Seu Potencial Financeiro</a>
     </section>
 
     <!-- Formulário de Contato -->
-    <section class="form-section" id="formulario">
-        <h2>Fale Conosco</h2>
-        <p>Preencha o formulário abaixo e um especialista entrará em contato para entender suas necessidades financeiras.</p>
-        <form>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" required>
-            
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            
-            <button type="submit">Quero uma Análise Personalizada</button>
-        </form>
-    </section>
+   <section class="form-section" id="formulario">
+    <h2>Fale Conosco</h2>
+    <p>Preencha o formulário abaixo e entraremos em contato para entender suas necessidades financeiras.</p>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        
+        <label for="renda">Renda Mensal</label>
+        <select id="renda" name="renda" required>
+            <option value="ate_10mil">Até 10 mil</option>
+            <option value="entre_10mil_15mil">Entre 10 mil e 15 mil</option>
+            <option value="acima_15mil">Acima de 15 mil</option>
+        </select>
+
+        <label for="conhecimento">Nível de Conhecimento em Finanças e Investimentos</label>
+        <select id="conhecimento" name="conhecimento" required>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+        </select>
+
+        <button type="submit">Quero uma Análise Personalizada</button>
+    </form>
+</section>
 
 </body>
 </html>
