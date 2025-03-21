@@ -78,6 +78,50 @@
             justify-content: space-around;
             flex-wrap: wrap;
         }
+
+        /* Estilo do Formulário no final da página */
+        .form-section {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .form-section form {
+            display: inline-block;
+            max-width: 500px;
+            text-align: left;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section input, .form-section textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-section button {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: #9c4dcc;
+        }
     </style>
 </head>
 <body>
@@ -86,7 +130,7 @@
     <header>
         <h1>Bem-vindo à Seu Portfólio</h1>
         <p>A consultoria financeira ideal para quem deseja organizar finanças, investir com segurança e aumentar seu patrimônio.</p>
-        <a href="#agendar" class="button">Quero Agendar</a>
+        <a href="#formulario" class="button">Quero Agendar</a>
     </header>
 
     <!-- Nossos Serviços -->
@@ -110,14 +154,27 @@
                 <p>Desenvolvemos uma estratégia personalizada de alocação de ativos, visando maximizar retornos e minimizar riscos, conforme seu perfil.</p>
             </div>
         </div>
-        <a href="#agendar" class="button">Quero Agendar</a>
+        <a href="#formulario" class="button">Quero Agendar</a>
     </section>
 
     <!-- Por que escolher a Seu Portfólio? -->
     <section class="section" id="porque-escolher">
         <h2>Por que Escolher a Seu Portfólio?</h2>
         <p>Oferecemos uma abordagem integrada, utilizando ferramentas avançadas para fornecer um serviço completo e personalizado, visando o seu sucesso financeiro. Com nossa equipe especializada, você terá total confiança nas soluções que oferecemos.</p>
-        <a href="#agendar" class="button">Quero Agendar</a>
+        <a href="#formulario" class="button">Quero Agendar</a>
+    </section>
+
+    <!-- Formulário no final da página -->
+    <section class="form-section" id="formulario">
+        <h2>Agende Sua Consultoria</h2>
+        <p>Preencha os dados abaixo para agendar sua consultoria personalizada.</p>
+        <form action="enviar_dados.php" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <input type="tel" name="telefone" placeholder="Seu Telefone" required>
+            <textarea name="mensagem" placeholder="Mensagem (opcional)"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
 </body>
