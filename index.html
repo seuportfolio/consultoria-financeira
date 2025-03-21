@@ -233,12 +233,13 @@
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         width: 100%;
+        margin-top: 30px; /* Para garantir o espaçamento entre a seção e o formulário */
     }
 
     .form-section label {
         display: block;
         font-size: 1.1em;
-        margin: 15px 0 5px;
+        margin-bottom: 5px;
         color: #333;
     }
 
@@ -247,7 +248,7 @@
     .form-section button {
         width: 100%;
         padding: 12px;
-        margin: 10px 0;
+        margin: 15px 0; /* Maior espaço entre os campos */
         border: 1px solid #ddd;
         border-radius: 5px;
         font-size: 1.1em;
@@ -265,5 +266,19 @@
 
     .form-section button:hover {
         background-color: #9c4dcc;
+    }
+
+    /* Ajuste para os campos select e input ficarem mais harmoniosos */
+    .form-section input[type="text"],
+    .form-section input[type="email"],
+    .form-section input[type="tel"],
+    .form-section select {
+        display: block;
+        width: calc(100% - 24px); /* Para corrigir o problema de largura */
+        margin-bottom: 20px; /* Adiciona mais espaço entre os campos */
+        font-size: 1.1em;
+        padding: 12px 12px; /* Maior padding para melhorar a aparência */
+        border-radius: 5px;
+        border: 1px solid #ddd;
     }
 </style>
